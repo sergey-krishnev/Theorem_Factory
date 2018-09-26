@@ -1,0 +1,1 @@
+LastName FirstName. MiddleName., “paper”, Siberian Math. J., vol:issue (year), pages

@@ -1,0 +1,2 @@
+Program path: D:\Program Files\Theorem Factory
+Launch TheoremFactory.bat

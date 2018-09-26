@@ -1,0 +1,1 @@
+LastName FirstName. MiddleName. paper // jour year. Ò. vol, No. issue. Ñ. pages.

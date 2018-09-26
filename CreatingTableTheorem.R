@@ -1,0 +1,138 @@
+#CREATING FROM TEX TO DATA.FRAME FUNCTORS AND RELATIONS
+setwd("D:/Program Files/Theorem Factory/choice")
+selected_functor <- scan("selected_functor.txt", what="character", sep=" ")
+selected_relation <- scan("selected_relation.txt", what="character", sep=" ")
+selected_tmodel_template <- scan("selected_tmodel_template.txt", what="character", sep=" ")
+nameofoutput <- scan("nameofarticle.txt", what="character", sep=" ")
+
+selected_functor <- selected_functor[3]
+selected_relation <- selected_relation[3]
+selected_tmodel_template <- selected_tmodel_template[3]
+nameofoutput <- nameofoutput[3]
+
+selected_functor <- sub(".tex","",selected_functor)
+selected_relation <- sub(".tex","",selected_relation)
+selected_tmodel_template <- sub(".tex","",selected_tmodel_template)
+
+selected_functor <- paste(selected_functor,".txt",sep ="")
+selected_relation <- paste(selected_relation,".txt",sep ="")
+selected_tmodel_template <- paste(selected_tmodel_template,".txt",sep ="")
+
+setwd("D:/Program Files/Theorem Factory/text_input_documents")
+table_functor <- readLines(selected_functor)
+table_relation <- readLines(selected_relation)
+table_tmodel_template <- readLines(selected_tmodel_template)
+
+table_functor <- table_functor[(grep("begin\\{tabular\\}\\{\\|l\\|l\\|l\\|\\}",table_functor)+1):(grep("end\\{tabular\\}",table_functor)-1)] #table from tex
+table_relation <- table_relation[(grep("begin\\{tabular\\}\\{\\|l\\|l\\|l\\|\\}",table_relation)+1):(grep("end\\{tabular\\}",table_relation)-1)] #table from tex
+table_tmodel_template <- table_tmodel_template[(grep("begin\\{tabular\\}\\{\\|l\\|l\\|l\\|l\\|\\}",table_tmodel_template)+1):(grep("end\\{tabular\\}",table_tmodel_template)-1)] #table from tex
+
+table_functor <- gsub("\t\t","",table_functor)
+table_functor <- gsub("\\\\\\\\","",table_functor)
+table_functor <- gsub("\\\\\\hline","",table_functor)
+table_functor <- gsub("(?<=[\\s])\\s*|^\\s+|\\s+$", "", table_functor, perl=TRUE) #removing extra spaces
+table_functor <-gsub(" ","\\?",table_functor)
+
+
+table_relation <- gsub("\t\t","",table_relation)
+table_relation <- gsub("\\\\\\hline","",table_relation)
+table_relation <- gsub("\\\\\\\\","",table_relation)
+table_relation <- gsub("(?<=[\\s])\\s*|^\\s+|\\s+$", "", table_relation, perl=TRUE) #removing extra spaces
+table_relation <- gsub(" ","\\?",table_relation)
+
+table_tmodel_template <- gsub("\t\t","",table_tmodel_template)
+table_tmodel_template <- gsub("\\\\\\hline","",table_tmodel_template)
+table_tmodel_template <- gsub("\\\\\\\\","",table_tmodel_template)
+table_tmodel_template <- gsub("(?<=[\\s])\\s*|^\\s+|\\s+$", "", table_tmodel_template, perl=TRUE) #removing extra spaces
+table_tmodel_template <- gsub(" ","",table_tmodel_template)
+
+
+functors <- data.frame( do.call( rbind, strsplit( table_functor[2:(length(table_functor))], "&" ) ) ) #create data.frame functors
+names(functors) <-do.call( rbind, strsplit( table_functor[1], "&" ) )
+#Redact ? right
+names(functors) <-gsub("\\?","",names(functors))
+functors$NameSpecificFunctor <- gsub("\\?","",functors$NameSpecificFunctor)
+functors$DescFunctor <- gsub("\\?"," ",functors$DescFunctor)
+functors$PropertiesFunctor <- gsub("\\?","",functors$PropertiesFunctor)
+
+
+relations <- data.frame( do.call( rbind, strsplit( table_relation[2:(length(table_relation))], "&" ) ) ) #create data.frame relations
+names(relations) <-do.call( rbind, strsplit( table_relation[1], "&" ) )
+#Redact ? right
+names(relations) <-gsub("\\?","",names(relations))
+relations$NameSpecificRelation <- gsub("\\?","",relations$NameSpecificRelation)
+relations$DescRelation <- gsub("\\?"," ",relations$DescRelation)
+relations$PropertiesRelation <- gsub("\\?","",relations$PropertiesRelation)
+
+tmodels <- data.frame( do.call( rbind, strsplit( table_tmodel_template[2:(length(table_tmodel_template))], "&" ) ) ) #create data.frame tmodels
+names(tmodels) <-do.call( rbind, strsplit( table_tmodel_template[1], "&" ) )
+
+
+#CHOICE OF TMODEL TYPE
+Tmodels <- data.frame(lapply(tmodels, as.character), stringsAsFactors=FALSE)
+Tmodels$PropertiesDelta <- strsplit(Tmodels$PropertiesDelta,",")
+Tmodels$PropertiesX <- strsplit(Tmodels$PropertiesX,",")
+
+#CREATING FROM DATA.FRAME FUNCTORS AND RELATIONS TO DATA.FRAME THEOREMAS AND LEMMAS
+Functors <- data.frame(lapply(functors, as.character), stringsAsFactors=FALSE)
+Functors$PropertiesFunctor <- strsplit(Functors$PropertiesFunctor,",")
+if (length(unlist(Tmodels$PropertiesTeta))>1) {
+  TmodelsPropertiesTeta <- paste(unlist(Tmodels$PropertiesTeta), collapse ="|")
+} else {TmodelsPropertiesTeta <- unlist(Tmodels$PropertiesTeta)}
+ChoosenPropertiesFunctors <- Functors[grep(TmodelsPropertiesTeta,Functors$PropertiesFunctor),1:3] #May to paste any propertie
+#Functors[intersect(grep("LowerRegular",Functors$PropertiesFunctor),grep("LowerRegular",Functors$PropertiesFunctor)),1:3]
+#For two properties
+
+BinaryRelations <- data.frame(lapply(relations, as.character), stringsAsFactors=FALSE)
+BinaryRelations$PropertiesRelation <- strsplit(BinaryRelations$PropertiesRelation,",")
+if (length(unlist(Tmodels$PropertiesDelta))>1) {
+  TmodelsPropertiesDelta <- paste(unlist(Tmodels$PropertiesDelta), collapse ="|")
+} else {TmodelsPropertiesDelta <- unlist(Tmodels$PropertiesDelta)}
+ChoosenPropertiesRelations <- BinaryRelations[grep(TmodelsPropertiesDelta,BinaryRelations$PropertiesRelation),1:3]
+
+
+ForTheorem <- merge(ChoosenPropertiesFunctors,ChoosenPropertiesRelations)
+ForTheorem$NameSpecificFunctor <- gsub("\\$","",ForTheorem$NameSpecificFunctor)
+ForTheorem$NameSpecificRelation <- gsub("\\$","",ForTheorem$NameSpecificRelation)
+
+
+#CREATING DATA.FRAME THEOREMAS FROM TEMPLATES IN TXT FORMAT
+PT <- paste(unlist(Tmodels$PropertiesTeta),collapse = "")
+PD <- paste(unlist(Tmodels$PropertiesDelta),collapse = "")
+PX <- paste(unlist(Tmodels$PropertiesX),collapse = "")
+PTDX <- paste(PT,PD,PX,sep = "_")
+WayOfTemplates <- paste("D:/Program Files/Theorem Factory/tmodel_templates/",PTDX,sep ="")
+setwd(WayOfTemplates)
+NamesTheoremasAndLemmas <- sub(".txt","",dir())
+data_TAL <- lapply(dir(),readLines)
+unlistdata_TAL <- unlist(data_TAL)
+template_TAL <- as.data.frame(data_TAL,col.names = NamesTheoremasAndLemmas)
+template_TAL <- data.frame(lapply(template_TAL, as.character), stringsAsFactors=FALSE)
+
+TheoremsAndLemmas <- data.frame(
+ Lemma1 = paste("{\\it Let $\\mathfrak{F} = \\mathfrak{N}_p \\mathfrak{X}$, where $\\mathfrak{X}$ - formation, and $\\mathfrak{X} \\subseteq \\mathfrak{N}$.Then $\\mathfrak{F}$ is $",ForTheorem$NameSpecificRelation,"_2^{",ForTheorem$NameSpecificFunctor,"}$ - recognizable formation in class $\\mathfrak{S}.$  } \\\\\\\\ ",sep = ""),
+ Lemma3 = paste("{\\it Any formation of nilpotent groups is $",ForTheorem$NameSpecificRelation,"_2^{",ForTheorem$NameSpecificFunctor,"}$ - recognizable.}  \\\\\\\\ ",sep = ""),
+ Theorem2 = paste("{\\it Any local subformation of formation $\\mathfrak{N}^2$ of all metanilpotent groups is $",ForTheorem$NameSpecificRelation,"_3^{",ForTheorem$NameSpecificFunctor,"}$ - recognizable.} \\\\\\\\ ",sep = ""),
+ Theorem4 = paste("{\\it Class $\\mathfrak{N}^n (n \\geqslant 1)$ is $",ForTheorem$NameSpecificRelation,"_{n+1}^{",ForTheorem$NameSpecificFunctor,"}$ - recognizable.} \\\\\\\\ ",sep = "")
+)
+#END OF THEOREMAS AND LEMMAS
+
+#CREATING FROM DATA.FRAME THEOREMAS AND LEMMAS TO TEX FILE (THEOREM2)
+setwd("D:/Program Files/Theorem Factory/text_output_documents")
+HeadTex <- c("\\documentclass[a4paper,14pt]{extarticle}",
+"\\usepackage{cmap}",
+"\\usepackage[cp1251]{inputenc}",
+"\\usepackage[english]{babel}",
+"\\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}",
+"\\usepackage{amssymb}",
+"\\usepackage{amsmath, amsthm}",
+"\\usepackage{indentfirst}",
+"\\usepackage{amssymb}",
+"\\begin{document}")
+LegTex <- c("\\end{document}")
+OutputTheorem2 <-as.character(TheoremsAndLemmas$Theorem4)
+TexDocument <-c(HeadTex,OutputTheorem2,LegTex)
+nameofoutput <- paste(nameofoutput,".tex",sep = "")
+fileConn<-file(nameofoutput)
+writeLines(TexDocument, fileConn)
+close(fileConn)

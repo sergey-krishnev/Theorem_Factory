@@ -1,0 +1,199 @@
+\documentclass[12pt,A4paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\tolerance=5500
+\voffset=-25mm
+\hoffset=-25mm
+\textheight=262mm
+\textwidth=176mm
+
+
+\begin{document}
+
+
+{\sl ,,, }
+
+\medskip
+
+\centerline{\sf{ ,,,, }} 
+
+\medskip
+
+\centerline{\bf ,,,,, }
+
+\medskip
+
+{\bf Аннотация.} ,,,,,, 
+
+
+\medskip
+
+{\bf Ключевые слова:} ,,,,,,, 
+
+\centerline{\bf Введение} 
+
+\medskip
+
+ ,,,,,,,, 
+
+\medskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\centerline{\bf 2. Предварительные результаты} 
+
+ ,,,,,,,,, 
+
+
+
+  
+\medskip
+
+\centerline{\bf 3. ,,,,,,,,,, }
+ 
+   
+\medskip
+
+ ,,,,,,,,,,, 
+
+\medskip
+
+\centerline{\bf 4.  ,,,,,,,,,,,, }
+
+\medskip
+
+ ,,,,,,,,,,,,, 
+
+\centerline {\sl ЛИТЕРАТУРА}
+
+\medskip
+
+1. {\sl Huppert B.} Endliche Gruppen. I. Berlin: Springer-Verl., 1967. % 794 s.
+
+2. {\sl Казарин Л.\,С.} О группах с факторизацией // Докл. АН СССР. 1981. 
+Т. 256, № 1. С. 26--29. 
+
+3. {\sl Васильев А.\,Ф., Васильева Т.\,И., Тютянов В.\,Н.}
+О конечных группах сверхразрешимого типа // Сиб. мат. журн. 2010.
+Т. 51, № 6. С. 1270--1281.  
+
+4. {\sl Baer R.} Classes  of finite groups and their properties // 
+Illinois J. Math. 1957. № 1. P. 115--187.
+
+5. {\sl Weinstein M. (editor)} Between nilpotent and solvable. 
+Passaic: Polygonal Publ. House, 1982.
+
+6. {\sl Asaad M., Shaalan A.} On the supersolubility of finite groups //
+Arch. Math. 1989. V. 53, № 4. P. 318--326.
+
+7. {\sl Alejandre M., Ballester-Bolinches A., Cossey J.,
+Pedraza-Aguilera M.} On some permutable products of supersoluble 
+groups // Rev. Mat. Iberoamericana. 2004. V. 20. P. 413--425.
+
+8. {\sl Васильев А.\,Ф., Васильева Т.\,И.} О конечных группах, у которых 
+главные факторы являются простыми группами // Изв. вузов. Матем.
+1997. № 11 (426). C. 10--14.
+
+9. {\sl Targonskiy E.\,A., Skiba A.\,N.} Finite groups with given systems 
+of $\mathbb{P}$-embedded subgroups // 
+Izvestija of Gomel State University. 2006. № 3 (36). P. 74--76.
+
+10. {\sl Guo W., Shum K.\,P., Skiba A.\,N.} Criterions of supersolubility 
+for products of supersoluble groups // 
+Publ. Math. Debrecen. 2006. V. 68, № 3-4. P. 433--449.
+
+11. {\sl Шеметков Л.\,А.} Формации конечных групп. М.: Наука, 1978.
+
+12. {\sl Doerk K., Hawkes T.} Finite soluble groups. Berlin; New York: 
+Walter de Gruyter, 1992. % 891 p.
+
+13. {\sl Ballester-Bolinches A., Ezquerro L.\,M.} Classes of finite groups.  
+Dordrecht: Springer-Verl., 2006.  % 385 p.
+
+ 
+\medskip
+
+{\sl Статья поступила}
+
+{\sl Васильев Александр Федорович 
+
+
+Гомельский государственный университет им. Ф.Скорины,
+кафедра алгебры и геометрии, 
+
+ул. Советская, 104, 
+г.~Гомель 246019, Республика Беларусь 
+} 
+
+formation56@mail.ru
+
+\medskip
+
+{\sl Васильева Татьяна Ивановна
+
+Белорусский государственный университет транспорта, 
+кафедра высшей математики, 
+
+ул. Кирова, 34, 
+г.~Гомель 246653, Республика Беларусь
+}
+
+tivasilyeva@mail.ru
+
+\medskip
+
+{\sl Тютянов Валентин Николаевич 
+
+Гомельский государственный университет им. Ф.Скорины,
+кафедра алгебры и геометрии, 
+
+ул. Советская, 104, 
+г.~Гомель 246019, Республика Беларусь 
+} 
+
+tyutyanov@front.ru
+
+
+\newpage
+
+\centerline{\bf ON PRODUCTS OF $\mathbb{P}$-SUBNORMAL SUBGROUPS IN FINITE GROUPS} 
+
+
+
+
+\centerline{\bf Summary}
+
+\medskip
+
+A subgroup $H$ of a finite group $G$ is called $\mathbb{P}$-subnormal in $G$
+if either $H$ coincides with group $G$ or $H$ can be 
+connected with the group $G$ by a chain of subgroups with prime indices. 
+If any Sylow subgroup is $\mathbb{P}$-subnormal in a group $G$, then 
+$G$ is called a w-supersoluble group.
+Properties of $\mathbb{P}$-subnormal subgroups 
+ and properties of groups,
+which are  a product of its two $\mathbb{P}$-subnormal subgroups, in particular, a product of its
+$\mathbb{P}$-subnormal w-supersoluble subgroups have been found.
+
+\medskip
+
+Keywords: finite group, $\Bbb{P}$-subnormal subgroup, w-supersoluble group, 
+product of subgroups.
+
+
+
+
+
+
+\end{document}

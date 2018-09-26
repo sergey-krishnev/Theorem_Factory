@@ -1,0 +1,1 @@
+"{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $",ForTheorem$NameSpecificRelation,"_2^{",ForTheorem$NameSpecificFunctor,"}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ "

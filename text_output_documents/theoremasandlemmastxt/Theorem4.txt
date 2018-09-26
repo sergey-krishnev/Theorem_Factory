@@ -1,0 +1,31 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{cmap}
+\usepackage[cp1251]{inputenc}
+\usepackage[english]{babel}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath, amsthm}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\begin{document}
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{T_1}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{T_2}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{T_3}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{S_{sn}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{S_n}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{sub_\mathfrak{F}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{S_{an}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{S_{cn}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{S_{\mathfrak{X}-at}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Sigma_{n+1}^{S_{\mathfrak{X}-san}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{T_1}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{T_2}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{T_3}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{S_{sn}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{S_n}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{sub_\mathfrak{F}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{S_{an}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{S_{cn}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{S_{\mathfrak{X}-at}}$ - recognizable.} \\\\ 
+{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $\Omega_{n+1}^{S_{\mathfrak{X}-san}}$ - recognizable.} \\\\ 
+\end{document}

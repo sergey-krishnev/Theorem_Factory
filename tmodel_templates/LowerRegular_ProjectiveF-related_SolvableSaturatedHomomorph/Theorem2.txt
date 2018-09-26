@@ -1,0 +1,1 @@
+"{\it Any local subformation of formation $\mathfrak{N}^2$ of all metanilpotent groups is $",ForTheorem$NameSpecificRelation,"_3^{",ForTheorem$NameSpecificFunctor,"}$ - recognizable.} \\\\ "

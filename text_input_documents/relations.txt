@@ -1,0 +1,26 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{cmap}
+\usepackage[cp1251]{inputenc}
+\usepackage[english]{babel}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath, amsthm}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{hhline}
+\usepackage{blindtext}
+
+\begin{document}
+\begin{table}[]
+	\centering
+	\caption{Relations}
+	\label{my-label}
+	\begin{tabular}{|l|l|l|} \hline
+		NameSpecificRelation & DescRelation                                                                                                                                                                                                                                           & PropertiesRelation   \\ \hline
+		$\Sigma$             & \parbox{6cm}{ binary relation on groups such that for any group G the pair of its subgroups (H, K) $\in \Sigma_G$, if and only if $(|G:H|,|G:K|)=1$.}                                                                                                                   & Projective,F-related \\ \hline
+		
+		$\Omega$             & \parbox{6cm}{binary relation on class $\mathfrak{S}$ of solvable subgroups such that for any group G the pair of its subgroups (H, K) $\in \Omega_G$ if and only if H and K - non-conjugate maximal subgroups of G or one of the H or K subgroups coincides with G.} & Projective,F-related \\ \hline
+	\end{tabular}
+\end{table}
+	
+\end{document}

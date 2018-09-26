@@ -1,0 +1,33 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{cmap}
+\usepackage[cp1251]{inputenc}
+\usepackage[english]{babel}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath, amsthm}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\begin{document}
+\begin{table}[]
+	\centering
+	\caption{Functors}
+	\label{my-label}
+	\begin{tabular}{|l|l|l|} \hline
+		NameSpecificFunctor    & DescFunctor                          & PropertiesFunctor          \\ \hline
+		$T_1$                  & group                                & LowerRegular               \\ \hline
+		$T_2$                  & subgroups                            & LowerRegular               \\ \hline
+		$T_3$                  & 1                                    & LowerRegular               \\ \hline
+		$S_{sn}$               & subnormal subgroups                  & Regular,LowerRegular       \\ \hline
+		$S_n$                  & normal subgroups                     & Regular,LowerRegular       \\ \hline
+		$res_{\mathfrak{F}}$   & corradical of group                  & Unitary                    \\ \hline
+		$rad_{\mathfrak{F}}$   & radical of group                     & Unitary,Radical,Transitive \\ \hline
+		$sub_\mathfrak{F}$     & $\mathfrak{X}$-subnormal subgroups   & Regular,LowerRegular       \\ \hline
+		$S_{an}$               & abnormal subgroups                   & LowerRegular               \\ \hline
+		$S_{cn}$               & counternormal subgroups              & LowerRegular               \\ \hline
+		$S_{\mathfrak{X}-at}$  & $\mathfrak{X}$-attainable subgroups  & Regular,LowerRegular       \\ \hline
+		$S_{\mathfrak{X}-san}$ & $\mathfrak{X}$-subabnormal subgroups & Regular,LowerRegular \\ \hline     
+	\end{tabular}
+\end{table}
+
+
+\end{document}

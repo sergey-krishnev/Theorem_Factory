@@ -1,0 +1,31 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{cmap}
+\usepackage[cp1251]{inputenc}
+\usepackage[english]{babel}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath, amsthm}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\begin{document}
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{T_1}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{T_2}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{T_3}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{S_{sn}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{S_n}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{sub_\mathfrak{F}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{S_{an}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{S_{cn}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{S_{\mathfrak{X}-at}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Sigma_2^{S_{\mathfrak{X}-san}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{T_1}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{T_2}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{T_3}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{S_{sn}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{S_n}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{sub_\mathfrak{F}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{S_{an}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{S_{cn}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{S_{\mathfrak{X}-at}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+{\it Let $\mathfrak{F} = \mathfrak{N}_p \mathfrak{X}$, where $\mathfrak{X}$ - formation, and $\mathfrak{X} \subseteq \mathfrak{N}$.Then $\mathfrak{F}$ is $\Omega_2^{S_{\mathfrak{X}-san}}$ - recognizable formation in class $\mathfrak{S}.$  } \\\\ 
+\end{document}

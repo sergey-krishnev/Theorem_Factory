@@ -1,0 +1,1 @@
+"{\it Any formation of nilpotent groups is $",ForTheorem$NameSpecificRelation,"_2^{",ForTheorem$NameSpecificFunctor,"}$ - recognizable.}  \\\\ "

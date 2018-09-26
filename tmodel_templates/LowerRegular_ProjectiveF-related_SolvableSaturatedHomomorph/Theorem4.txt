@@ -1,0 +1,1 @@
+"{\it Class $\mathfrak{N}^n (n \geqslant 1)$ is $",ForTheorem$NameSpecificRelation,"_{n+1}^{",ForTheorem$NameSpecificFunctor,"}$ - recognizable.} \\\\ "

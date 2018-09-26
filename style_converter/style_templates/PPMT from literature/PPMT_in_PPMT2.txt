@@ -1,0 +1,1 @@
+FirstName. MiddleName. LastName, “paper”, \emph{Problems of physics, mathematics and technics}, year, ¹ issue(vol), pages

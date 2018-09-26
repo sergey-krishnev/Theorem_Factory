@@ -1,0 +1,1 @@
+FirstName. MiddleName. LastName, “paper”, Math. Notes, vol:issue (year), pages
